@@ -31,7 +31,7 @@
         }
     },
     "configurationArguments": {
-      "applicationExtensionKey": "__240d30fc-ff02-4a7a-8705-0f6030289285__",
+      "applicationExtensionKey": "240d30fc-ff02-4a7a-8705-0f6030289285",
       "save": {
         "url": "https://cloudtestm.herokuapp.com/journeybuilder/save",
           "verb": "POST",
