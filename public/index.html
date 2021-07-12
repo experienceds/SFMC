@@ -21,6 +21,7 @@
             require(config, dependencies);
         })();
     </script>
+    
 </head>
 
 <body>
@@ -28,11 +29,22 @@
         <div class="slds-grid">
 
             <main class="slds-col">
-               
+               <div id="result">
                 <h1>welcome to your activity!</h1>
             </main>
-            
+            <script>
+        const Http = new XMLHttpRequest();
+const url='https://google.com';
+Http.open("GET", url);
+Http.send();
 
+Http.onreadystatechange = (e) => {
+    
+  console.log(Http.responseText)
+    document.getElementsByTagName('result').innerHTML = Http.responseText;
+}
+        
+    </script>
         </div>
 
     </div>
